@@ -15,8 +15,10 @@ function page() {
                   <CardItem
                     translateZ="50"
                     className="text-xl font-bold text-neutral-600 dark:text-white"
+                    key={course.id}
                   >
                     {course.title}
+                   
                   </CardItem>
                   <CardItem
                     as="p"
@@ -40,14 +42,14 @@ function page() {
                       as="button"
                       className="px-4 py-2 rounded-xl text-xs font-normal dark:text-white"
                     >
-                      {/* Try now → */} {""}
+                      Try now →
                     </CardItem>
                     <CardItem
                       translateZ={20}
                       as="button"
                       className="px-4 py-2 rounded-xl bg-black dark:bg-white dark:text-black text-white text-xs font-bold"
                     >
-                      {/* Sign up */} {""}
+                      Read more
                     </CardItem>
                   </div>
                 </CardBody>
