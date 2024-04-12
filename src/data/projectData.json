@@ -1,0 +1,27 @@
+{
+    "projects": [
+        {
+            "id": 1,
+            "title": "BestSellers",
+            "description": "BestSellers is the best place to find your next perfect place to live. We have a wide range of properties for you to choose from.",
+            "isFeatured": true,
+            "image": "/projects/bestsellers.png"
+        },
+        {
+            "id": 2,
+            "title": "TODO-BlogPage",
+            "description": " Blogapp using Appwrite Backend as a Service. User can create account and add posts.",
+            "isFeatured": true,
+            "image": "/projects/todo.png"
+        },
+        
+        {
+            "id": 3,
+            "title": "RFID-Door Lock",
+            "description": "Implemented GSM module integration to enhance security features, ensuring real-time alerts and remote access control for the RFID door lock system.",
+            "isFeatured": true,
+            "image": ""
+        }
+
+    ]
+}

@@ -1,0 +1,105 @@
+{
+    "courses": [
+      {
+        "id": 1,
+        "title": "HTML5",
+        "slug": "https://hiteshchoudhary.com/",
+        "description": "HTML is the standard markup language for creating Web pages.",
+        "price": 99.99,
+        "instructor": "Hitesh Chaudhari and CodeWithHarry",
+        "isFeatured": true,
+        "image": "/courses/html5.jpg" 
+      },
+      {
+        "id": 2,
+        "title": "CSS",
+        "slug": "Read-CSS",
+        "description": "CSS is the language we use to style an HTML document.",
+        "price": 109.99,
+        "instructor": "CodeWithHarry",
+        "isFeatured": false,
+        "image": "/courses/css.jpg" 
+      },
+      {
+        "id": 3,
+        "title": "JavaScript",
+        "slug": "Read-JS",
+        "description": "JavaScript is the world's most popular programming language.",
+        "price": 119.99,
+        "instructor": "Hitesh Chaudhari",
+        "isFeatured": true,
+        "image": "/courses/js.png" 
+      },
+      {
+        "id": 4,
+        "title": "TypeScript",
+        "slug": "Read-TS",
+        "description": "TypeScript is JavaScript with added syntax for types..",
+        "price": 129.99,
+        "instructor": "Hitesh Chaudhari",
+        "isFeatured": false,
+        "image": "/courses/ts.png"
+      },
+      {
+        "id": 5,
+        "title": "ReactJS",
+        "slug": "React-JS",
+        "description": "React is a JavaScript library for building user interfaces.",
+        "price": 139.99,
+        "instructor": "Hitesh Chaudhari",
+        "isFeatured": false,
+        "image": "/courses/react.png"
+      },
+      {
+        "id": 6,
+        "title": "NodeJS",
+        "slug": "Read-nodejs",
+        "description": "Node.js is an open source server environment and allow us to to run JavaScript on the server.",
+        "price": 149.99,
+        "instructor": "Dave Gray",
+        "isFeatured": true,
+        "image": "/courses/node.png"
+      },
+      {
+        "id": 7,
+        "title": "ExpressJS",
+        "slug": "",
+        "description": "Express makes the development of Node application very easy and it is very simple to use. It provides a simple and efficient way to build web applications and APIs using JavaScript",
+        "price": 159.99,
+        "instructor": "",
+        "isFeatured": false,
+        "image": "/courses/express.png"
+      },
+      {
+        "id": 8,
+        "title": "TailwindCSS",
+        "slug": "Read-TCSS",
+        "description": "Tailwind CSS works by scanning all of your HTML files, JavaScript components, and any other templates for class names, generating the corresponding styles and then writing them to a static CSS file.",
+        "price": 169.99,
+        "instructor": "Hitesh Chaudhari",
+        "isFeatured": true,
+        "image": "/courses/tailwind.jpg"
+      },
+      {
+        "id": 9,
+        "title": "Git/Github",
+        "slug": "GitHub allows you to create, store, change, merge, and collaborate on files or code. Any member of a team can access the GitHub repository (think of this as a folder for files) and see the most recent version in real-time. Then, they can make edits or changes that the other collaborators also see",
+        "description": "GitHub allows you to create, store, change, merge, and collaborate on files or code. Any member of a team can access the GitHub repository (think of this as a folder for files) and see the most recent version in real-time. Then, they can make edits or changes that the other collaborators also see",
+        "price": 179.99,
+        "instructor": "",
+        "isFeatured": false,
+        "image": "/courses/github.png"
+      },
+      {
+        "id": 10,
+        "title": "NextJS (Intermediate)",
+        "slug": "Read-NextJS",
+        "description": "Next.js is a React framework that gives you building blocks to create web applications. By framework, we mean Next.js handles the tooling and configuration needed for React, and provides additional structure, features, and optimizations for your application.",
+        "price": 189.99,
+        "instructor": "Hitesh Chaudhari",
+        "isFeatured": true,
+        "image": "/courses/nextjs.jpg"
+      }
+    ]
+  }
+  
