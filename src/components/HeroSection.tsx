@@ -44,7 +44,7 @@ function HeroSection() {
                 </h1>
                 <p
                     className=" mt-4 font-normal text-base md:text-lg text-neutral-300
-                 max-w-lg mx-auto"
+                 max-w-lg mx-auto text-center "
                 >
                     {" "}
                     As an aspiring Full Stack Developer, proficient in frontend and backend development. Skilled in designing user interfaces, managing databases, and implementing server-side logic. Expertise in multiple programming languages and frameworks. Passionate about innovation and continuous learning to deliver robust solutions for modern businesses.
