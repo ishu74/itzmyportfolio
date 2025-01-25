@@ -14,7 +14,7 @@
         "id": 2,
         "title": "CSS",
         "slug": "Read-CSS",
-        "description": "CSS is the language we use to style an HTML document.",
+        "description": "CSS is the language we use to style an HTML document.(Libraries - BootStrap, TailwindCSS, ShadCnUI)",
         "price": 109.99,
         "instructor": "CodeWithHarry",
         "isFeatured": false,
@@ -44,7 +44,7 @@
         "id": 5,
         "title": "ReactJS",
         "slug": "React-JS",
-        "description": "React is a JavaScript library for building user interfaces.",
+        "description": "React is a JavaScript library for building user interfaces.(Libraries - Redux, Zustand)",
         "price": 139.99,
         "instructor": "Hitesh Chaudhari",
         "isFeatured": false,
@@ -99,6 +99,36 @@
         "instructor": "Hitesh Chaudhari",
         "isFeatured": true,
         "image": "/courses/nextjs.jpg"
+      },
+      {
+        "id": 11,
+        "title": "Socket.IO",
+        "slug": "Learn-SocketIO",
+        "description": "Socket.IO is a JavaScript library that enables real-time, bidirectional communication between web clients and servers. It is commonly used for building chat applications, live updates, and collaborative platforms, providing event-driven connections over websockets.",
+        "price": 149.99,
+        "instructor": "",
+        "isFeatured": true,
+        "image": "/courses/socket.png"
+      },
+      {
+        "id": 12,
+        "title": "C#(Intermediate)",
+        "slug": "Master-CSharp",
+        "description": "C# is a modern, object-oriented programming language developed by Microsoft, widely used for building desktop, web, and mobile applications. It is known for its simplicity, versatility, and powerful features like LINQ, async/await, and seamless integration with the .NET framework.",
+        "price": 179.99,
+        "instructor": "Jane Smith",
+        "isFeatured": true,
+        "image": "/courses/csharp.jfif"
+      },
+      {
+        "id": 13,
+        "title": ".NET Core MVC (Intermediate)",
+        "slug": "Learn-DotNet-Core-MVC",
+        "description": ".NET Core MVC is a cross-platform framework for building web applications using the Model-View-Controller (MVC) architectural pattern. It provides powerful tools for developing dynamic web applications and APIs with built-in support for routing, authentication, and data binding.",
+        "price": 199.99,
+        "instructor": "John Doe",
+        "isFeatured": true,
+        "image": "/courses/dotnet.jfif"
       }
     ]
   }

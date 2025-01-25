@@ -1,63 +1,59 @@
-'use client'
+"use client";
 import Image from "next/image";
 import React from "react";
-import { CardBody, CardContainer, CardItem } from "@/components/ui/3d-card";
-import courseData from "@/data/music_courses.json"
+import courseData from "@/data/music_courses.json";
+import { Table, Tbody, Td, Th, Thead, Tr } from "@/components/ui/table"; // Assuming you're using a UI library
 
-function page() {
+function Page() {
   return (
-    <div className="min-h-screen bg-black py-12 pt-36">
-        <h1 className="text-lg md:text-7xl text-center font-sans font-bold mb-8 text-white">All courses ({courseData.courses.length})</h1>  
-        <div className="flex flex-wrap justify-center">
+    <div className="min-h-screen bg-black py-12 pt-36 px-4 md:px-12">
+      <h1 className="text-lg md:text-4xl text-center font-sans font-bold mb-8 text-white">
+      Skills ({courseData.courses.length})
+      </h1>
+
+      <div className="overflow-x-auto bg-gray-50 dark:bg-black rounded-xl shadow-lg">
+        <Table className="w-full border-collapse text-left">
+          {/* Table Head */}
+          {/* <Thead className="bg-gray-100 dark:bg-gray-900 text-gray-900 dark:text-white">
+            <Tr>
+              <Th className="p-4 border-b">Image</Th>
+              <Th className="p-4 border-b">Title</Th>
+              <Th className="p-4 border-b">Description</Th>
+              <Th className="p-4 border-b text-center">Action</Th>
+            </Tr>
+          </Thead> */}
+
+          {/* Table Body */}
+          <Tbody className="text-gray-800 dark:text-gray-200">
             {courseData.courses.map((course, index) => (
-                <CardContainer key={index}  className="inter-var m-4">
-                <CardBody className="bg-gray-50 relative group/card  dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-auto sm:w-[30rem] h-auto rounded-xl p-6 border  ">
-                  <CardItem
-                    translateZ="50"
-                    className="text-xl font-bold text-neutral-600 dark:text-white"
-                    key={course.id}
-                  >
-                    {course.title}
-                   
-                  </CardItem>
-                  <CardItem
-                    as="p"
-                    translateZ="60"
-                    className="text-neutral-500 text-sm max-w-sm mt-2 dark:text-neutral-300"
-                  >
-                    {course.description}
-                  </CardItem>
-                  <CardItem translateZ="100" className="w-full mt-4">
-                    <Image
-                      src={course.image}
-                      height="1000"
-                      width="1000"
-                      className="h-60 w-full object-cover rounded-xl group-hover/card:shadow-xl"
-                      alt={course.title}
-                    />
-                  </CardItem>
-                  <div className="flex justify-between items-center mt-20">
-                    <CardItem
-                      translateZ={20}
-                      as="button"
-                      className="px-4 py-2 rounded-xl text-xs font-normal dark:text-white"
-                    >
-                      Try now →
-                    </CardItem>
-                    <CardItem
-                      translateZ={20}
-                      as="button"
-                      className="px-4 py-2 rounded-xl bg-black dark:bg-white dark:text-black text-white text-xs font-bold"
-                    >
-                      Read more
-                    </CardItem>
-                  </div>
-                </CardBody>
-              </CardContainer>
+              <Tr
+                key={index}
+                className="hover:bg-gray-200 dark:hover:bg-gray-800 transition-all"
+              >
+                <Td className="p-4 border-b">
+                  <Image
+                    src={course.image}
+                    height={60}
+                    width={100}
+                    className="rounded-lg object-cover"
+                    alt={course.title}
+                  />
+                </Td>
+                <Td className="p-4 border-b font-bold">{course.title}</Td>
+                <Td className="p-4 border-b text-sm">{course.description}</Td>
+                <Td className="p-4 border-b text-center">
+                  {/* <button className="px-4 py-2 bg-gray-600 text-white rounded-lg hover:bg-gray-400">
+                    Try Now →
+                  </button> */}
+                  {""}
+                </Td>
+              </Tr>
             ))}
-        </div>  
+          </Tbody>
+        </Table>
+      </div>
     </div>
-  )
+  );
 }
 
-export default page
+export default Page;

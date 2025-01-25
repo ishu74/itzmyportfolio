@@ -24,7 +24,7 @@ function HeroSection() {
 
     return (
         <div
-            className="h-auto md:h-[40rem] w-full rounded-md 
+            className="h-auto md:h-[55rem] w-full rounded-md 
         flex flex-col items-center justify-center
          relative overflow-hidden mx-auto py-10 
          md:py-0"
@@ -43,14 +43,13 @@ function HeroSection() {
                     />
                 </h1>
                 <p
-                    className=" mt-4 font-normal text-base md:text-lg text-neutral-300
-                 max-w-lg mx-auto text-center "
+                    className="mt-4 font-normal text-base md:text-lg text-neutral-300 max-w-3xl mx-auto text-center leading-relaxed"
                 >
-                    {" "}
                     As an aspiring Full Stack Developer, proficient in frontend and backend development. Skilled in designing user interfaces, managing databases, and implementing server-side logic. Expertise in multiple programming languages and frameworks. Passionate about innovation and continuous learning to deliver robust solutions for modern businesses.
                 </p>
-                <div className="mt-4">
-                    <Link href={"/courses"}>
+
+                <div className="mt-6">
+                    <Link href={"/projects"}>
                         <Button
                             className="bg-white dark:bg-black text-black
                      dark:text-white border-neutral-200 dark:border-slate-800"

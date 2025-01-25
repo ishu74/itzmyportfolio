@@ -5,9 +5,13 @@ import { CardBody, CardContainer, CardItem } from "@/components/ui/3d-card";
 import projectData from "@/data/projectData.json"
 
 function page() {
+
+  const handleRedirect = (url: string) => {
+    window.location.href = url;
+  };
   return (
     <div className="min-h-screen bg-black py-12 pt-36">
-        <h1 className="text-lg md:text-7xl text-center font-sans font-bold mb-8 text-white">All Projects ({projectData.projects.length})</h1>  
+        <h1 className="text-lg md:text-4xl text-center font-sans font-bold mb-8 text-white">All Projects ({projectData.projects.length})</h1>  
         <div className="flex flex-wrap justify-center">
             {projectData.projects.map((project, index) => (
                 <CardContainer  key ={index} className="inter-var m-4">
@@ -36,20 +40,23 @@ function page() {
                     />
                   </CardItem>
                   <div className="flex justify-between items-center mt-20">
+                  {/* <a href={project.url} target="_blank" rel="noopener noreferrer"> */}
                     <CardItem
                       translateZ={20}
                       as="button"
+                      onClick={() => handleRedirect(project.url)}
                       className="px-4 py-2 rounded-xl text-xs font-normal dark:text-white"
                     >
-                      Try now → 
+                      Try now-- → 
                     </CardItem>
-                    <CardItem
+                    {/* </a> */}
+                    {/* <CardItem
                       translateZ={20}
                       as="button"
                       className="px-4 py-2 rounded-xl bg-black dark:bg-white dark:text-black text-white text-xs font-bold"
                     >
                       Read more
-                    </CardItem>
+                    </CardItem> */}
                   </div>
                 </CardBody>
               </CardContainer>

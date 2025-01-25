@@ -35,8 +35,15 @@ const Instructors = [
 function Instructures() {
   return (
     <div className='relative h-[40rem] overflow-hidden fles items-center justify-center'>
+        {/* <p
+                        className="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-white 
+        sm:text-4xl"
+                    >
+                        LEARN WITH THE BEST
+                    </p> */}
         <WavyBackground
         className='w-full max-w-7xl mx-auto flex flex-col items-center justify-centerh-full' >
+             
             <h2 className='text-2xl md:text-4xl lg:text-7xl text-white font-bold text-center mb-8'>Meet My Instructors</h2>
             <p className="text-base md:text-lg text-white text-center mb-4">Discover the talented professionals who will guide your coding journey</p>
         

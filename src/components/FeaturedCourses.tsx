@@ -24,16 +24,16 @@ function FeaturedCourses() {
             <div>
                 <div className="text-center">
                     <h2
-                        className="test-base text-teal-600
+                        className="test-base text-teal-600 text-3xl
         font-semibold tracking-wide uppercase"
                     >
-                        FEATURED COURSES
+                        FEATURED Skills
                     </h2>
                     <p
                         className="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-white 
         sm:text-4xl"
                     >
-                        LEARN WITH THE BEST
+                        {/* LEARN WITH THE BEST */}
                     </p>
                 </div>
             </div>
@@ -63,7 +63,7 @@ function FeaturedCourses() {
                                     >
                                         {course.description}
                                     </p>
-                                    <Link
+                                    {/* <Link
                                         // href={`/courses/${course.slug}`}
                                         href={'/courses'}
                                         className=" mt-3 px-4 py-2 rounded
@@ -73,7 +73,7 @@ function FeaturedCourses() {
                                                      duration-200"
                                     >
                                         Learn more
-                                    </Link>
+                                    </Link> */}
                                 </div>
                             </BackgroundGradient>
                         </div>
@@ -90,7 +90,7 @@ function FeaturedCourses() {
                        hover:bg-gray-400 transition 
                        duration-200"
                 >
-                    View All Courses
+                    View All Skills
                 </Link>
             </div>
         </div>
