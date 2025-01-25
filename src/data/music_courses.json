@@ -118,7 +118,7 @@
         "price": 179.99,
         "instructor": "Jane Smith",
         "isFeatured": true,
-        "image": "/courses/csharp.jfif"
+        "image": "/courses/csharp.png"
       },
       {
         "id": 13,
@@ -128,7 +128,7 @@
         "price": 199.99,
         "instructor": "John Doe",
         "isFeatured": true,
-        "image": "/courses/dotnet.jfif"
+        "image": "/courses/dotnet.png"
       }
     ]
   }
