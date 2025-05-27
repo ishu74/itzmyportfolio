@@ -30,6 +30,12 @@ const Instructors = [
         designation: "Youtuber",
         image: "/instructors/piyush.jpg"
       },
+      {
+        id: 5,
+        name: "Imthiyas Gani",
+        designation: "Senior employee (AutomateBuddy)",
+        image: "/instructors/imthiyas.jfif"
+      }
       
     ]
 function Instructures() {
