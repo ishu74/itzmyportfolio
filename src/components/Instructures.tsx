@@ -34,7 +34,7 @@ const Instructors = [
     id: 5,
     name: "Imthiyas Gani",
     designation: "Senior employee (AutomateBuddy)",
-  image: "/instructors/piyush.jpg"
+  image: "/instructors/imthiyas.jpg"
   }
 
 ]
