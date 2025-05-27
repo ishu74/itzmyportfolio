@@ -6,8 +6,15 @@ import Navbar from "@/components/Navbar";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "MyPortfolio",
+  title: "Aayush Singh",
   description: "Portfolio created by aayush singh",
+   icons: {
+    icon: [
+      { url: "/favicon.ico", type: "image/x-icon" },
+      { url: "/favicon.png", type: "image/png" },
+    ],
+  }
+
 };
 
 export default function RootLayout({
