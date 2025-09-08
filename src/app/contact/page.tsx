@@ -1,13 +1,11 @@
-
 'use client';
 
-import React, { FormEvent, useState } from 'react';
+import React, { FormEvent, useState, useEffect } from 'react';
 import { BackgroundBeams } from '@/components/ui/background-beams';
 import toast, { Toaster } from 'react-hot-toast';
 
 // Firebase imports
 import { initializeApp } from "firebase/app";
-import { getAnalytics } from "firebase/analytics";
 import { getFirestore, collection, addDoc, Timestamp } from "firebase/firestore";
 
 // Firebase configuration
@@ -21,14 +19,24 @@ const firebaseConfig = {
   measurementId: "G-FK2Z95D074"
 };
 
-// Initialize Firebase
+// Initialize Firebase app and Firestore
 const app = initializeApp(firebaseConfig);
-const analytics = getAnalytics(app);
 const db = getFirestore(app);
 
 function MusicSchoolContactUs() {
   const [email, setEmail] = useState('');
   const [message, setMessage] = useState('');
+
+  // Initialize analytics only on client-side after mount
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      import("firebase/analytics").then(({ getAnalytics }) => {
+        getAnalytics(app);
+      }).catch((error) => {
+        console.error("Analytics failed to load:", error);
+      });
+    }
+  }, []);
 
   const handleSubmit = async (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault();
@@ -82,7 +90,7 @@ function MusicSchoolContactUs() {
             type="submit"
             className="px-6 py-2 rounded-lg bg-teal-500 text-white font-medium hover:bg-teal-600 focus:outline-none focus:ring-2 focus:ring-teal-500 focus:ring-offset-2"
           >
-            Send Message14444444444444444444444444444444444444
+            Send Message
           </button>
         </form>
       </div>
