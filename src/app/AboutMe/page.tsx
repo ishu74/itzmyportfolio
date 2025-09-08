@@ -61,7 +61,7 @@ const page = () => {
                 </li>
               </ul>
     
-              <h2 className="text-2xl font-bold mt-6">My Projects</h2>
+              {/* <h2 className="text-2xl font-bold mt-6">My Projects</h2>
               <p className="my-4">
                 Over the years, I’ve worked on various projects that have not only strengthened my technical skills but also broadened my perspective on solving real-world problems. Some of my key projects include:
               </p>
@@ -78,7 +78,7 @@ const page = () => {
                 <li>
                   <strong>Bestsellers App:</strong> A MERN stack application that allows users to perform CRUD operations, contact landlords, and manage detailed property information with user authentication.
                 </li>
-              </ul>
+              </ul> */}
     
               <h2 className="text-2xl font-bold mt-6">Get in Touch</h2>
               <p className="my-4">

@@ -2,41 +2,36 @@
     "projects": [
         {
             "id": 1,
-            "title": "BestSellers",
+            "title": "BestSellers (Acedemic Project)",
             "description": "BestSellers is the best place to find your next perfect place to live. We have a wide range of properties for you to choose from.",
             "isFeatured": true,
             "image": "/projects/bestsellers.png",
-             "url":"https://ferfe.onrender.com/"
-
+            "url": "https://ferfe.onrender.com/"
         },
+  
         {
             "id": 2,
-            "title": "Groupify",
-            "description": "Groupify is a vibrant online community platform that empowerspeople to connect collaborate and cultivate meaningfulrelationships",
-            "isFeatured": true,
-            "image": "/projects/groupify.png",
-            "url":"https://success-groupify-1a4c.vercel.app/"
-        },
-        
-        {
-            "id": 3,
-            "title": "BoingBuy",
+            "title": "BoingBuy (Practice MERN)",
             "description": "Boing Buy is a fast, feature-rich e-commerce application built with React. Leveraging clean architecture and Redux for state management, it ensures seamless shopping experiences. Explore our diverse products with quick load times and intuitive navigation.",
             "isFeatured": true,
             "image": "/projects/BB.webp",
-            "url":"https://boingbuy.vercel.app/"
-          
+            "url": "https://boingbuy.vercel.app/"
         },
         {
-            "id": 4,
+            "id": 3,
             "title": "Wechat",
             "description": "WeChat provide seamless communication with friends and colleagues. Users can easily create group chats to stay connected with multiple people, with real-time features like typing indicators and seen/unseen message statuses. Authentication ensures only authorized members can join the group, and the system keeps track of message counts for each user. File sharing is also streamlined, allowing users to send documents, images, and videos securely within the chat.",
             "isFeatured": true,
             "image": "/projects/Wechat.webp",
-            "url":""
-        
-          
+            "url": ""
+        },
+        {
+            "id": 4,
+            "title": "Dynamic Sheet Management (Freelancing)",
+            "description": "The Dynamic Sheet Management Application solves real-life challenges faced by teams using Excel for data handling. It offers version control, approval workflows, role-based permissions, and detailed logs to prevent data loss and unauthorized edits. Admins can create and update sheets, approvers can review changes, and users can access only approved data. Dynamic columns with validations ensure structured data entry, while every action is logged for full traceability.",
+            "isFeatured": true,
+            "image": "/projects/DynamicSheet.png",
+            "url": ""
         }
-
     ]
 }
